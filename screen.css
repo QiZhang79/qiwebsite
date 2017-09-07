@@ -49,3 +49,44 @@ table {
 
 /* End Reset CSS */
 /* Begin Site CSS */
+body {
+	background-color: #f3f1f1;
+}
+
+.header {
+	background-color: #ffffff;
+	height: 35px;
+
+}
+
+.name {
+	padding: 10px 0 10px 40px;
+	font-weight: bold;
+}
+
+.contents {
+	margin-left:40px;
+	margin-right: 40px;
+}
+
+.content_title {
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.my_pic {
+	padding-top: 15px;
+	display: block;
+	margin:auto;
+	width: 100px;
+
+}
+
+p {
+	margin-top: 15px;
+	line-height: 1.2;
+	text-align: justify;
+	font-size: 15px;
+}
