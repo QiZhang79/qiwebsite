@@ -49,15 +49,41 @@ table {
 
 /* End Reset CSS */
 /* Begin Site CSS */
-body {
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+	font-family: Helvetica, Arial, sans-serif;
+	/* font-size: 1.125em; */ /* 18 / 16 = 1.125 */
+	line-height: 1.222222em; /* 22 /19 = 1.222... aka 122% */
+    padding-top: 1.222222em; 
+	padding-right: 1.222222em;
+	padding-left: 1.222222em;
 	background-color: #f3f1f1;
 	font-family: 'Playfair Display', serif;
 }
 
+h1 {
+	font-size: 2.778em; /* 50.02px / 18px = 2.778 */
+	line-height: 1.319em; /* 66px / 50.02px = 1.319em ; 3 gridlines (22px) */
+}
+figure {
+	padding-bottom: 1.22222em;
+}
+p {
+	text-indent: 1.222222em;
+}
+h1 + p {
+	text-indent: 0;
+}
+
+
 /* Header */
-.header {
+#header {
 	background-color: #ffffff;
-	height: 35px;
+	height: 85px;
 
 }
 
@@ -67,9 +93,9 @@ body {
 }
 
 /* Contents */
-.contents {
-	margin-left: 140px;
-	margin-right:140px;
+#primary {
+	margin-left: 100px;
+	margin-right:100px;
 }
 
 .content_title {
@@ -120,11 +146,12 @@ li {
     display: inline;
 }
 
-/* Media Query */
-@media (max-width: 1024px) {
-	.contents {
-		margin-left: 100px;
-		margin-right:100px;
+/* State Styles */
+/* JavaScript or media-query dependent styles */
+@media screen and (max-width: 1024px) {
+	#primary {
+		margin-left: 80px;
+		margin-right:80px;
 	}
 	
 	footer {
@@ -133,10 +160,10 @@ li {
 	}
 }
 
-@media (max-width: 736px) {
-	.contents {
-		margin-left: 40px;
-		margin-right:40px;
+@media screen and (max-width: 736px) {
+	 #primary {
+		margin-left: 20px;
+		margin-right:20px;
 	}
 	footer {
 		margin-left: 40px;
